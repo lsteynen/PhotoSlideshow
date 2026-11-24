@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <!-- Use net47 here if you specifically need 4.7 -->
+    <TargetFramework>net47</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyName>PhotoSlideshow</AssemblyName>
+    <RootNamespace>PhotoSlideshow</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AutoGenerateBindingRedirects>False</AutoGenerateBindingRedirects>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <AssemblyVersion>1.0.2</AssemblyVersion>
+    <FileVersion>1.0.2</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="app.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- only used for the folder picker dialog -->
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+
+</Project>
